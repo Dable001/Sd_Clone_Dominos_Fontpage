@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lato&family=Merriweather:ital@0;1&family=Prompt&family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    border:0;
+}
+.flex{
+    display:flex;
+}
+.top-header {
+    position: sticky;
+    top: 0;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100; /* Add a higher z-index to keep the header above other elements */
+  }
+.top-header{
+    flex-direction:row;
+    height:8vh;
+    padding: 8px 8px 16px 24px;
+    justify-content: space-around;
+}
+.navimage{
+    height:35px;
+    margin-top:5px;
+}
+.navlist{
+    margin-top:20px;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+}
+.navlist>li{
+   list-style:none;
+}
+.navlist>li>a{
+    text-decoration:none;
+    color:rgb(69, 70, 71);
+}
+.DB{
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    font-family: 'Lato', sans-serif;
+    font-size:18px;
+    cursor: pointer;
+    color:white;
+    background-color:red;
+    border-radius:20px;
+    border:none;
+    font-weight: bolder;
+}
+.DB:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.bg-container{
+    width: 100vw;
+    height: 60vh;
+    padding-top:5px;
+    background-color:#1a5ca3;
+    gap:20px;
+}
+.banner-text{
+    flex-direction:column;
+    gap:20px;
+    height: 80%;
+    width:40%;
+    margin-top:5%;
+    margin-left:20px;
+    overflow:hidden;
+    transition:all ease 0.3s;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text>p{
+font-family: 'Lato', sans-serif;
+font-size: 20px;
+color:#47a0ff;
+}
+.order{
+    width:80%;
+    height:50px;
+    padding:10px;
+    border-radius:10ppx;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color:rgb(54, 211, 54);
+    cursor: pointer;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-weight:bold;
+    font-size:16px;
+}
+.off-image{
+    width:100%;
+}
+.banner-text:hover img{
+    scale:1.1;
+}
+.banner-image{
+    height:100%;
+    width:70%;
+}
+.copun{
+    flex-direction: column;
+    gap:10px;
+    height:50vh;
+    width:80%;
+    margin-left:160px;
+}
+.copun>h2{
+    color:#708aa5;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bolder;
+    font-size:30px;
+    margin:25px auto;
+}
+.sliderbox{
+    height:300px;
+    width: 100%;
+}
+.sliderimage{
+    height: 100%;
+    width: 100%;
+}
+.explore{ /* The main explore div section with the class name of explore */
+    flex-direction:column;
+    height:60vh;
+    width:80%;
+    margin:25px auto;
+}
+.ex-text{/* The explore text div with the class name of ex-text  it is inside the explore div */
+    height:8vh;
+    width:100%;
+    color:#708aa5;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bolder;
+    font-size:30px;
+    text-align: center;
+}
+.cardbox{ /* The card container with the name of cardbox it is inside the explore div */
+    flex-direction:row;
+    gap:10px;
+    height:45vh;
+    width:100%;
+}
+.ex-card{  /* The ex-card div it is  inside the  cardbox div */
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    padding-top:5px;
+    gap:6px;
+    height:90%;
+    width:978px;
+    border:solid 1px rgb(149, 153, 149); 
+}
+.card-image{ /* The card-image it is inside the ex-card div */
+    height:5rem;
+}
+.ex-card>h3{   /* The <h3> tag  it is inside the ex-card div  */
+    font-family: 'Prompt', sans-serif;
+    font-weight:bold;
+    font-size: 30px;
+    color:#2b4547;
+}
+.ex-card>p{ /*The <p> tag it is inside the ex-card div */
+    font-size:18px;
+    color:#2b4547;
+}
+.cardlink{ /* This is the  cardlink div it is inside the ex-card div */
+    height: 8vh;
+    width: 100%;
+    margin-top:18%;
+    justify-content: center;
+    align-items:center ;
+    border: solid 1px rgb(149, 153, 149);;
+}
+.cardlink>a{/* The <a> is inside the cardlink div */
+    font-family: 'Prompt', sans-serif;
+    color:red;
+    font-size:15px;
+    font-weight : 900 ;
+    text-decoration: none;
+}
+.appimage{
+    height:50vh;
+    width:100vw;
+    padding:3px;
+    background-color:#f2f5fc;
+}
+.rightsideapp{
+    flex-direction:column;
+    justify-content:center;
+    height:100%;
+    width:50vw;
+    padding:10px;
+}
+.lefsideapp{
+    height:100%;
+    width:50vw;
+    justify-content:center;
+}
+.appimg{
+    height: 100%;
+    width:70%;
+}
+.rightsideapp>h3{
+    font-family: 'Rubik', sans-serif;
+    font-weight:bold;
+    letter-spacing: 0.15;
+    color: #59688c;
+    font-size:40px;
+}
+.rightsideapp>p{
+    font-size: 27px;
+    line-height: 43px;
+    letter-spacing: 0.24px;
+    color: #8899c0;
+    max-width: 457px;
+}
+.storbox{
+    height:20%;
+    width:100vw;
+    gap:40px;
+}
+.play{
+    height:85%;
+    cursor: pointer;
+}
+.seocontent{
+    flex-direction: column;
+    height:50vh;
+    width:100vw;
+    margin-top:15px;
+    padding:40px;
+}
+.content-h3{
+    font-family:'Rubik', sans-serif ;
+    font-size: 30px;
+    font-weight: 700;
+    color: #006491;
+}
+.content-p{
+    color: #54565b;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.footer{
+background-color:#222e3a;
+height:20vh;
+width:100vw;
+justify-content: center;
+align-items: center;
+gap: 25px;
+}
+.flogo{
+    height:40px;
+    cursor: pointer;
+}
+.ctext{
+    height:10vh;
+    width:100vw;
+    text-align: center;
+    background-color:#222e3a;
+    color:white;
+}
